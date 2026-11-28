@@ -276,7 +276,7 @@ class LANChatApp:
         ).pack(fill=tk.X)
         tk.Label(
             card,
-            text="Nhắn tin và truyền tệp ngang hàng (UDP + TCP)",
+            text="Nhắn tin và truyền tệp ngang hàng",
             font=("Segoe UI", 9),
             bg=t["surface"],
             fg=t["text_muted"],
@@ -416,7 +416,7 @@ class LANChatApp:
 
     # ==================== MÀN HÌNH CHÍNH 2 CỘT ====================
     def build_main_screen(self):
-        self.root.title(f"LAN Chat — {self.node.name} (:{self.node.tcp_port})")
+        self.root.title(f"LAN Chat - {self.node.name} (:{self.node.tcp_port})")
 
         self.body_frame = tk.Frame(self.root)
         self.body_frame.pack(fill=tk.BOTH, expand=True)
